@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painting Services | MC Services Bengaluru</title>
+
+    <meta name="description"
+        content="MC Services provides professional interior and exterior painting services for homes, offices and commercial properties in Bengaluru.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: #222;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+            padding: 14px 6%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123b5d;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #f28c28;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 570px;
+
+            background:
+                linear-gradient(
+                    rgba(18,59,93,0.72),
+                    rgba(18,59,93,0.72)
+                ),
+
+                url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 7%;
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 780px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffb347;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+            color: #f3f6f8;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-orange {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: #d96f0c;
+        }
+
+        .btn-white {
+            background: white;
+            color: #123b5d;
+        }
+
+        .btn-white:hover {
+            background: #eeeeee;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+
+        /* ================= INTRO ================= */
+
+        .intro {
+            padding: 70px 7%;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            max-width: 850px;
+            margin: auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services {
+            background: #f6f8fa;
+            padding: 70px 7%;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .heading h2 {
+            color: #123b5d;
+            font-size: 38px;
+        }
+
+        .heading p {
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 24px;
+        }
+
+        .service-content h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .service-content p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* ================= WHY CHOOSE US ================= */
+
+        .why {
+            padding: 80px 7%;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .why-image img {
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .why-content h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .why-content p {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .benefits {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .benefits li {
+            margin: 13px 0;
+            font-weight: 600;
+        }
+
+        .benefits li::before {
+            content: "✓";
+            color: #f28c28;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* ================= PROCESS ================= */
+
+        .process {
+            padding: 70px 7%;
+            background: #f6f8fa;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .process-number {
+            width: 55px;
+            height: 55px;
+            margin: auto auto 15px;
+
+            background: #f28c28;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .process-card h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .process-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ================= GALLERY ================= */
+
+        .gallery {
+            padding: 75px 7%;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+
+            padding: 75px 7%;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(18,59,93,0.92),
+                    rgba(18,59,93,0.92)
+                ),
+
+                url("https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 17px;
+            margin-bottom: 28px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        footer h3 {
+            color: #ffb347;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #d9e4eb;
+        }
+
+        footer a {
+            display: block;
+            color: #d9e4eb;
+            text-decoration: none;
+            margin: 8px 0;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 18px;
+            color: #b9c9d3;
+            font-size: 14px;
+        }
+
+        /* ================= FLOATING BUTTONS ================= */
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 999;
+
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .floating-btn {
+            width: 58px;
+            height: 58px;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+
+            color: white;
+            font-size: 27px;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width: 1000px) {
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media(max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 550px;
+                padding: 60px 6%;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .service-grid,
+            .process-grid,
+            .gallery-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2,
+            .heading h2,
+            .why-content h2,
+            .cta h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        MC <span>SERVICES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="painting.html">Painting</a>
+
+        <a href="waterproofing.html">Waterproofing</a>
+
+        <a href="interior.html">Interior Design</a>
+
+        <a href="facility.html">Facility Management</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Professional
+            <span>Painting Services</span>
+        </h1>
+
+        <p>
+            Give your home, office or commercial property
+            a fresh and beautiful appearance with professional
+            painting solutions from MC Services.
+        </p>
+
+        <div class="buttons">
+
+            <a href="contact.html"
+               class="btn btn-orange">
+                Request a Quote
+            </a>
+
+            <a href="tel:9591895195"
+               class="btn btn-white">
+                📞 Call Now
+            </a>
+
+            <a href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20am%20interested%20in%20your%20painting%20services."
+               target="_blank"
+               class="btn btn-whatsapp">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <h2>Transform Your Space with the Right Colours</h2>
+
+    <p>
+        A professional paint job can completely transform
+        the look and feel of your property. MC Services provides
+        carefully planned painting solutions with attention to
+        surface preparation, finishing and overall appearance.
+    </p>
+
+</section>
+
+
+<!-- ================= PAINTING SERVICES ================= -->
+
+<section class="services">
+
+    <div class="heading">
+
+        <h2>Our Painting Services</h2>
+
+        <p>
+            Professional painting solutions for different spaces.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=85"
+                alt="Interior Wall Painting">
+
+            <div class="service-content">
+
+                <h3>Interior Painting</h3>
+
+                <p>
+                    Refresh bedrooms, living rooms, kitchens,
+                    offices and other interior spaces with
+                    professional painting.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=85"
+                alt="Exterior Painting">
+
+            <div class="service-content">
+
+                <h3>Exterior Painting</h3>
+
+                <p>
+                    Improve the appearance and protection of
+                    your building with quality exterior painting.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=85"
+                alt="House Painting">
+
+            <div class="service-content">
+
+                <h3>Residential Painting</h3>
+
+                <p>
+                    Complete painting solutions for apartments,
+                    villas, independent houses and residential spaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=85"
+                alt="Office Painting">
+
+            <div class="service-content">
+
+                <h3>Commercial Painting</h3>
+
+                <p>
+                    Professional painting for offices,
+                    shops, commercial buildings and workspaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=85"
+                alt="Wall Colour Painting">
+
+            <div class="service-content">
+
+                <h3>Wall Colour Solutions</h3>
+
+                <p>
+                    Choose suitable colour combinations to
+                    create attractive and comfortable spaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=900&q=85"
+                alt="Professional Painting Work">
+
+            <div class="service-content">
+
+                <h3>Repainting & Renovation</h3>
+
+                <p>
+                    Give old and faded surfaces a fresh new
+                    appearance with professional repainting.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why">
+
+    <div class="why-grid">
+
+
+        <div class="why-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1100&q=85"
+                alt="Professional Painting Team">
+
+        </div>
+
+
+        <div class="why-content">
+
+            <h2>Why Choose MC Services?</h2>
+
+            <p>
+                We focus on delivering clean, professional and
+                dependable painting services while understanding
+                the specific requirements of every property.
+            </p>
+
+            <ul class="benefits">
+
+                <li>Professional workmanship</li>
+
+                <li>Careful surface preparation</li>
+
+                <li>Clean and organized work</li>
+
+                <li>Interior and exterior solutions</li>
+
+                <li>Residential and commercial projects</li>
+
+                <li>Customer-focused service</li>
+
+            </ul>
+
+            <a href="contact.html"
+               class="btn btn-orange">
+                Get a Free Quote
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+    <div class="heading">
+
+        <h2>Our Painting Process</h2>
+
+        <p>
+            A simple and professional approach from start to finish.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card">
+
+            <div class="process-number">1</div>
+
+            <h3>Site Visit</h3>
+
+            <p>
+                We understand your property and painting requirements.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">2</div>
+
+            <h3>Preparation</h3>
+
+            <p>
+                Surfaces are inspected and prepared before painting.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">3</div>
+
+            <h3>Painting</h3>
+
+            <p>
+                Painting is carried out with attention to quality
+                and finishing.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">4</div>
+
+            <h3>Final Check</h3>
+
+            <p>
+                We review the completed work and ensure a clean finish.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+    <div class="heading">
+
+        <h2>Painting Inspiration</h2>
+
+        <p>
+            Explore different painting and interior styles.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern Interior">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=85"
+                alt="Beautiful Interior">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1000&q=85"
+                alt="Painted Room">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Give Your Property a Fresh Look?</h2>
+
+    <p>
+        Contact MC Services today for your painting requirements.
+    </p>
+
+    <a href="tel:9591895195"
+       class="btn btn-white">
+        📞 9591895195
+    </a>
+
+    <a href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20would%20like%20to%20get%20a%20painting%20quote."
+       target="_blank"
+       class="btn btn-whatsapp">
+        💬 Get Quote on WhatsApp
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Painting | Waterproofing | Interior Design |
+                Facility Management
+            </p>
+
+            <p style="margin-top:15px;">
+                Professional property solutions with quality,
+                reliability and customer satisfaction.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="painting.html">Painting</a>
+
+            <a href="waterproofing.html">Waterproofing</a>
+
+            <a href="interior.html">Interior Design</a>
+
+            <a href="facility.html">Facility Management</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <a href="tel:9591895195">
+                📞 9591895195
+            </a>
+
+            <a href="https://wa.me/919591895195"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+            <a href="mailto:mc.services.blr@gmail.com">
+                ✉ mc.services.blr@gmail.com
+            </a>
+
+            <p style="margin-top:12px;">
+                📍 Bhavani Nagar,<br>
+                Bengaluru - 560032
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC Services. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="floating-buttons">
+
+    <a
+        href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20am%20interested%20in%20your%20painting%20services."
+        target="_blank"
+        class="floating-btn whatsapp"
+        title="Chat on WhatsApp">
+
+        💬
+
+    </a>
+
+
+    <a
+        href="tel:9591895195"
+        class="floating-btn call"
+        title="Call MC Services">
+
+        📞
+
+    </a>
+
+</div>
+
+
+</body>
+</html>
+```

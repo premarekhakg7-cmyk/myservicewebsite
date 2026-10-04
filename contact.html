@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | MC SERVICES</title>
+
+    <meta name="description"
+          content="Contact MC SERVICES for Painting, Waterproofing, Interior Design and Facility Management services in Bengaluru.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #123b5d;
+            padding: 15px 6%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 22px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffb347;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            height: 540px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.60),
+                    rgba(0,0,0,0.60)
+                ),
+                url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-orange {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: #d96f0c;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #123b5d;
+        }
+
+        /* ================= COMMON ================= */
+
+        .section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            max-width: 760px;
+            margin: auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* ================= CONTACT SECTION ================= */
+
+        .contact-section {
+            background: #f7f9fb;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 45px;
+            align-items: stretch;
+        }
+
+        /* CONTACT INFORMATION */
+
+        .contact-info {
+            background: #123b5d;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-info::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(242,140,40,0.12);
+            right: -70px;
+            bottom: -70px;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info > p {
+            color: #dce7ef;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-icon {
+            min-width: 48px;
+            height: 48px;
+            background: #f28c28;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .contact-item h3 {
+            font-size: 17px;
+            margin-bottom: 3px;
+            color: #ffb347;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .contact-item a:hover {
+            color: #ffb347;
+        }
+
+        /* CONTACT IMAGE */
+
+        .contact-image {
+            margin-top: 30px;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ================= FORM ================= */
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.09);
+        }
+
+        .contact-form h2 {
+            color: #123b5d;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form > p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 7px;
+            color: #123b5d;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d5dce2;
+            border-radius: 6px;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #f28c28;
+        }
+
+        .form-group textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* ================= QUICK CONTACT ================= */
+
+        .quick-contact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .quick-card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .quick-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .quick-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            background: #f28c28;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+        }
+
+        .quick-card h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .quick-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .quick-card a {
+            text-decoration: none;
+            color: #123b5d;
+            font-weight: bold;
+        }
+
+        .quick-card a:hover {
+            color: #f28c28;
+        }
+
+        /* ================= SERVICES ================= */
+
+        .services-section {
+            background: #f7f9fb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            position: relative;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .service-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,0.85)
+                );
+        }
+
+        .service-overlay h3 {
+            color: white;
+            font-size: 20px;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    rgba(18,59,93,0.93),
+                    rgba(18,59,93,0.93)
+                ),
+                url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            color: white;
+            text-align: center;
+            padding: 80px 7%;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            color: #ffb347;
+            margin-bottom: 18px;
+        }
+
+        footer p,
+        footer a {
+            color: #d7e0e7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            margin-top: 35px;
+            padding-top: 20px;
+            text-align: center;
+            color: #b9c6cf;
+            font-size: 13px;
+        }
+
+        /* ================= FLOATING BUTTONS ================= */
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1000px) {
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quick-contact {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 15px 4%;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav ul li a {
+                font-size: 11px;
+            }
+
+            .hero {
+                height: 480px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 55px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 28px 22px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-contact,
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <div class="logo">
+            MC <span>SERVICES</span>
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="painting.html">Painting</a>
+                </li>
+
+                <li>
+                    <a href="waterproofing.html">Waterproofing</a>
+                </li>
+
+                <li>
+                    <a href="interior.html">Interior Design</a>
+                </li>
+
+                <li>
+                    <a href="facility.html">Facility Management</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Let's Talk About Your Project</h1>
+
+        <p>
+            Have a property improvement or maintenance requirement?
+            Our team is ready to help.
+        </p>
+
+        <a href="#contact-form" class="btn btn-orange">
+            Send an Enquiry
+        </a>
+
+        <a href="tel:9591895195" class="btn btn-outline">
+            Call Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact-section" id="contact-form">
+
+    <div class="section-title">
+
+        <h2>Contact MC SERVICES</h2>
+
+        <p>
+            Tell us what you need and our team will get in touch
+            with you to discuss your requirement.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                We are here to help with your painting,
+                waterproofing, interior design and facility
+                management requirements.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">📞</div>
+
+                <div>
+
+                    <h3>Phone</h3>
+
+                    <p>
+                        <a href="tel:9591895195">
+                            9591895195
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">✉</div>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        <a href="mailto:mc.services.blr@gmail.com">
+                            mc.services.blr@gmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">📍</div>
+
+                <div>
+
+                    <h3>Location</h3>
+
+                    <p>
+                        Bhavani Nagar,<br>
+                        Bengaluru – 560032
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">💬</div>
+
+                <div>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        <a
+                            href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20would%20like%20to%20make%20an%20enquiry."
+                            target="_blank">
+                            Chat with us on WhatsApp
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <img
+                class="contact-image"
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85"
+                alt="MC Services Property Work">
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form">
+
+            <h2>Send Us an Enquiry</h2>
+
+            <p>
+                Fill in your details and select the service you are
+                interested in.
+            </p>
+
+
+            <!--
+                The form opens WhatsApp with the entered details.
+                No server is required.
+            -->
+
+            <form onsubmit="sendToWhatsApp(); return false;">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address">
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="service">
+                            Service Required *
+                        </label>
+
+                        <select id="service" required>
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="Painting">
+                                Painting
+                            </option>
+
+                            <option value="Waterproofing">
+                                Waterproofing
+                            </option>
+
+                            <option value="Interior Design">
+                                Interior Design
+                            </option>
+
+                            <option value="Facility Management">
+                                Facility Management
+                            </option>
+
+                            <option value="Multiple Services">
+                                Multiple Services
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="property">
+                            Property Type
+                        </label>
+
+                        <select id="property">
+
+                            <option value="">
+                                Select property type
+                            </option>
+
+                            <option value="Residential">
+                                Residential
+                            </option>
+
+                            <option value="Apartment">
+                                Apartment
+                            </option>
+
+                            <option value="Villa">
+                                Villa
+                            </option>
+
+                            <option value="Office">
+                                Office
+                            </option>
+
+                            <option value="Commercial">
+                                Commercial
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Property Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter property location">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Your Requirement *
+                    </label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Tell us about your requirement..."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-orange submit-btn">
+
+                    Send Enquiry on WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK CONTACT ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Connect With Us</h2>
+
+        <p>
+            Choose the easiest way to reach MC SERVICES.
+        </p>
+
+    </div>
+
+
+    <div class="quick-contact">
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                📞
+            </div>
+
+            <h3>Call Us</h3>
+
+            <p>
+                Speak directly with our team.
+            </p>
+
+            <br>
+
+            <a href="tel:9591895195">
+                9591895195
+            </a>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                💬
+            </div>
+
+            <h3>WhatsApp</h3>
+
+            <p>
+                Send us your requirement instantly.
+            </p>
+
+            <br>
+
+            <a
+                href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20would%20like%20to%20make%20an%20enquiry."
+                target="_blank">
+
+                Start WhatsApp Chat
+
+            </a>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon">
+                ✉
+            </div>
+
+            <h3>Email Us</h3>
+
+            <p>
+                Send your detailed project requirement.
+            </p>
+
+            <br>
+
+            <a href="mailto:mc.services.blr@gmail.com">
+                mc.services.blr@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services-section">
+
+    <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>
+            Explore our complete range of property solutions.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <a href="painting.html" class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=85"
+                alt="Painting Services">
+
+            <div class="service-overlay">
+
+                <h3>Painting</h3>
+
+            </div>
+
+        </a>
+
+
+        <a href="waterproofing.html" class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=900&q=85"
+                alt="Waterproofing Services">
+
+            <div class="service-overlay">
+
+                <h3>Waterproofing</h3>
+
+            </div>
+
+        </a>
+
+
+        <a href="interior.html" class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                alt="Interior Design Services">
+
+            <div class="service-overlay">
+
+                <h3>Interior Design</h3>
+
+            </div>
+
+        </a>
+
+
+        <a href="facility.html" class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85"
+                alt="Facility Management Services">
+
+            <div class="service-overlay">
+
+                <h3>Facility Management</h3>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Have a Project in Mind?</h2>
+
+    <p>
+        Get in touch with MC SERVICES today.
+        We would be happy to discuss your requirement.
+    </p>
+
+    <a
+        href="tel:9591895195"
+        class="btn btn-orange">
+
+        📞 Call 9591895195
+
+    </a>
+
+    <a
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20would%20like%20to%20discuss%20a%20project."
+        class="btn btn-outline"
+        target="_blank">
+
+        WhatsApp Us
+
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Professional solutions for Painting,
+                Waterproofing, Interior Design and
+                Facility Management.
+            </p>
+
+            <br>
+
+            <p>
+                Quality workmanship. Reliable service.
+                Beautiful spaces.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="painting.html">Painting</a>
+                </li>
+
+                <li>
+                    <a href="waterproofing.html">Waterproofing</a>
+                </li>
+
+                <li>
+                    <a href="interior.html">Interior Design</a>
+                </li>
+
+                <li>
+                    <a href="facility.html">Facility Management</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <p>
+                📞
+                <a href="tel:9591895195">
+                    9591895195
+                </a>
+            </p>
+
+            <p>
+                ✉
+                <a href="mailto:mc.services.blr@gmail.com">
+                    mc.services.blr@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📍 Bhavani Nagar,<br>
+                Bengaluru – 560032
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC SERVICES. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="floating-buttons">
+
+    <a
+        class="float-btn whatsapp"
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20would%20like%20to%20make%20an%20enquiry."
+        target="_blank"
+        title="WhatsApp">
+
+        💬
+
+    </a>
+
+
+    <a
+        class="float-btn call"
+        href="tel:9591895195"
+        title="Call MC SERVICES">
+
+        📞
+
+    </a>
+
+</div>
+
+
+<!-- ================= WHATSAPP FORM SCRIPT ================= -->
+
+<script>
+
+function sendToWhatsApp() {
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const service =
+        document.getElementById("service").value;
+
+    const property =
+        document.getElementById("property").value;
+
+    const location =
+        document.getElementById("location").value;
+
+    const message =
+        document.getElementById("message").value;
+
+
+    const whatsappMessage =
+        "Hello MC SERVICES,%0A%0A" +
+
+        "*New Enquiry*%0A%0A" +
+
+        "*Name:* " + encodeURIComponent(name) + "%0A" +
+
+        "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+
+        "*Email:* " + encodeURIComponent(email) + "%0A" +
+
+        "*Service Required:* " +
+        encodeURIComponent(service) + "%0A" +
+
+        "*Property Type:* " +
+        encodeURIComponent(property) + "%0A" +
+
+        "*Property Location:* " +
+        encodeURIComponent(location) + "%0A%0A" +
+
+        "*Requirement:*%0A" +
+        encodeURIComponent(message);
+
+
+    const whatsappURL =
+        "https://wa.me/919591895195?text=" +
+        whatsappMessage;
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
+```

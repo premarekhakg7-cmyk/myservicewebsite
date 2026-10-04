@@ -1,0 +1,999 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MC SERVICES | Painting, Waterproofing, Interior Design & Facility Management</title>
+
+    <meta name="description"
+          content="MC SERVICES provides professional painting, waterproofing, interior design and facility management services in Bengaluru.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* HEADER */
+        header {
+            background: #123b5d;
+            color: white;
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffb347;
+        }
+
+        .header-call {
+            background: #f28c28;
+            padding: 9px 15px;
+            border-radius: 6px;
+        }
+
+        .header-call:hover {
+            color: white;
+            background: #d87515;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            background:
+                linear-gradient(rgba(5, 28, 45, 0.68), rgba(5, 28, 45, 0.68)),
+                url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=2000&q=85")
+                center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 720px;
+        }
+
+        .hero-content h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: #ffb347;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #d87515;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #123b5d;
+        }
+
+        /* GENERAL */
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #123b5d;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* INTRO */
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .intro img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .intro-text h2 {
+            font-size: 38px;
+            color: #123b5d;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .check-list li {
+            margin: 12px 0;
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #f28c28;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* SERVICES */
+        .services-section {
+            background: #f5f8fa;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 22px;
+        }
+
+        .service-content h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .service-content p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: #f28c28;
+            font-weight: bold;
+        }
+
+        /* WHY CHOOSE */
+        .why {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .why-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* CTA */
+        .cta {
+            background:
+                linear-gradient(rgba(18,59,93,0.9), rgba(18,59,93,0.9)),
+                url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1800&q=85")
+                center/cover;
+
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-size: 17px;
+        }
+
+        /* CONTACT STRIP */
+        .contact-strip {
+            background: #f28c28;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+            padding: 35px 7%;
+        }
+
+        .contact-strip a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .contact-item {
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        footer h3 {
+            color: #ffb347;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #d5e0e8;
+            margin-bottom: 8px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #d5e0e8;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 35px;
+            padding-top: 20px;
+            text-align: center;
+            color: #b9c8d3;
+            font-size: 14px;
+        }
+
+        /* FLOATING BUTTONS */
+        .floating {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .floating a {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* TABLET */
+        @media (max-width: 1050px) {
+            .services,
+            .why {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-content h1 {
+                font-size: 46px;
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 750px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .header-call {
+                display: none;
+            }
+
+            .hero {
+                min-height: 600px;
+                padding: 60px 6%;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 17px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+            }
+
+            .intro img {
+                height: 300px;
+            }
+
+            .intro-text h2 {
+                font-size: 30px;
+            }
+
+            .services,
+            .why,
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 230px;
+            }
+
+            .contact-strip {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        MC <span>SERVICES</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="painting.html">Painting</a>
+        <a href="waterproofing.html">Waterproofing</a>
+        <a href="interior.html">Interior Design</a>
+        <a href="facility.html">Facility Management</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="header-call" href="tel:9591895195">
+        📞 Call Us
+    </a>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Quality Services.<br>
+            <span>Beautiful Spaces.</span>
+        </h1>
+
+        <p>
+            Professional Painting, Waterproofing, Interior Design
+            and Facility Management solutions for homes, apartments,
+            offices and commercial properties.
+        </p>
+
+        <div class="buttons">
+
+            <a href="contact.html" class="btn btn-primary">
+                Request a Quote
+            </a>
+
+            <a href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+               class="btn btn-outline"
+               target="_blank">
+                WhatsApp Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section>
+
+    <div class="intro">
+
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+             alt="Modern residential property">
+
+        <div class="intro-text">
+
+            <h2>Your Property, Our Responsibility</h2>
+
+            <p>
+                At <strong>MC SERVICES</strong>, we provide reliable and
+                professional property service solutions designed to improve,
+                protect and maintain your spaces.
+            </p>
+
+            <p>
+                From a fresh coat of paint to complete interior solutions,
+                waterproofing and regular facility management, our team
+                focuses on quality workmanship and customer satisfaction.
+            </p>
+
+            <ul class="check-list">
+                <li>Professional & Reliable Service</li>
+                <li>Quality Workmanship</li>
+                <li>Transparent Communication</li>
+                <li>Residential & Commercial Solutions</li>
+            </ul>
+
+            <br>
+
+            <a href="about.html" class="btn btn-primary">
+                Learn More About Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services-section">
+
+    <div class="section-title">
+
+        <h2>Our Services</h2>
+
+        <p>
+            Complete solutions to make your property beautiful,
+            protected and well maintained.
+        </p>
+
+    </div>
+
+
+    <div class="services">
+
+        <!-- PAINTING -->
+        <div class="service-card">
+
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=85"
+                 alt="Professional painting service">
+
+            <div class="service-content">
+
+                <h3>Painting</h3>
+
+                <p>
+                    Interior and exterior painting solutions with
+                    professional surface preparation and quality finishes.
+                </p>
+
+                <a href="painting.html" class="read-more">
+                    Explore Painting →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- WATERPROOFING -->
+        <div class="service-card">
+
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=85"
+                 alt="Waterproofing and construction work">
+
+            <div class="service-content">
+
+                <h3>Waterproofing</h3>
+
+                <p>
+                    Reliable waterproofing solutions for terraces,
+                    roofs, bathrooms, walls, basements and leakage problems.
+                </p>
+
+                <a href="waterproofing.html" class="read-more">
+                    Explore Waterproofing →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- INTERIOR DESIGN -->
+        <div class="service-card">
+
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85"
+                 alt="Modern interior design">
+
+            <div class="service-content">
+
+                <h3>Interior Design</h3>
+
+                <p>
+                    Stylish and functional interior solutions for homes,
+                    apartments, offices and commercial spaces.
+                </p>
+
+                <a href="interior.html" class="read-more">
+                    Explore Interiors →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FACILITY MANAGEMENT -->
+        <div class="service-card">
+
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                 alt="Facility management office">
+
+            <div class="service-content">
+
+                <h3>Facility Management</h3>
+
+                <p>
+                    Professional property maintenance and facility
+                    management services for residential and commercial spaces.
+                </p>
+
+                <a href="facility.html" class="read-more">
+                    Explore Facility Management →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section>
+
+    <div class="section-title">
+
+        <h2>Why Choose MC SERVICES?</h2>
+
+        <p>
+            We combine professional service, quality workmanship
+            and customer-focused solutions.
+        </p>
+
+    </div>
+
+
+    <div class="why">
+
+        <div class="why-card">
+            <div class="why-icon">🏆</div>
+            <h3>Quality Work</h3>
+            <p>
+                We focus on delivering dependable and quality workmanship.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🤝</div>
+            <h3>Trusted Service</h3>
+            <p>
+                Clear communication and professional service from start to finish.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">⏱️</div>
+            <h3>Timely Completion</h3>
+            <p>
+                We work with proper planning to complete projects efficiently.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">💡</div>
+            <h3>Smart Solutions</h3>
+            <p>
+                Practical solutions designed around your property and requirements.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS / GALLERY -->
+<section class="services-section">
+
+    <div class="section-title">
+
+        <h2>Our Work</h2>
+
+        <p>
+            A glimpse of the spaces and projects we help transform.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+             alt="Modern interior">
+
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"
+             alt="Beautiful home interior">
+
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=85"
+             alt="Contemporary living space">
+
+        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1000&q=85"
+             alt="Home design">
+
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85"
+             alt="Building construction">
+
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1000&q=85"
+             alt="Modern building">
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Let's Transform Your Space</h2>
+
+    <p>
+        Looking for painting, waterproofing, interior design
+        or facility management services?
+        Talk to MC SERVICES today.
+    </p>
+
+    <div class="buttons" style="justify-content:center;">
+
+        <a href="contact.html" class="btn btn-primary">
+            Request a Quote
+        </a>
+
+        <a href="tel:9591895195" class="btn btn-outline">
+            📞 Call 9591895195
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT STRIP -->
+<section class="contact-strip">
+
+    <div class="contact-item">
+        📞
+        <br>
+        <a href="tel:9591895195">
+            9591895195
+        </a>
+    </div>
+
+    <div class="contact-item">
+        ✉️
+        <br>
+        <a href="mailto:mc.services.blr@gmail.com">
+            mc.services.blr@gmail.com
+        </a>
+    </div>
+
+    <div class="contact-item">
+        📍
+        <br>
+        Bhavani Nagar, Bengaluru – 560032
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Professional property service solutions for
+                residential and commercial spaces.
+            </p>
+
+            <p>
+                Painting | Waterproofing | Interior Design |
+                Facility Management
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="painting.html">Painting</a></li>
+
+                <li><a href="waterproofing.html">Waterproofing</a></li>
+
+                <li><a href="interior.html">Interior Design</a></li>
+
+                <li><a href="facility.html">Facility Management</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <p>📞
+                <a href="tel:9591895195">
+                    9591895195
+                </a>
+            </p>
+
+            <p>✉️
+                <a href="mailto:mc.services.blr@gmail.com">
+                    mc.services.blr@gmail.com
+                </a>
+            </p>
+
+            <p>📍 Bhavani Nagar, Bengaluru – 560032</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC SERVICES. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+
+    <a class="whatsapp"
+       href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES%2C%20I%20would%20like%20to%20enquire%20about%20your%20services."
+       target="_blank"
+       title="Chat on WhatsApp">
+        
+    <span>💬</span> 
+</a>
+
+    </a>
+
+    <a class="call"
+       href="tel:9591895195"
+       title="Call MC SERVICES">
+        📞
+    </a>
+
+</div>
+
+</body>
+</html>
+```

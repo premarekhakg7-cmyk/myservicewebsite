@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interior Design Services | MC SERVICES</title>
+
+    <meta name="description"
+          content="MC SERVICES provides professional interior design solutions for homes, offices, apartments and commercial spaces in Bengaluru.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* HEADER */
+        header {
+            background: #123b5d;
+            padding: 15px 6%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffb347;
+        }
+
+        /* HERO */
+        .hero {
+            height: 600px;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-orange {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: #d96f0c;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #123b5d;
+        }
+
+        /* COMMON */
+        .section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #123b5d;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            max-width: 750px;
+            margin: auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* INTRO */
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .intro img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .intro-text h2 {
+            color: #123b5d;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            margin-bottom: 18px;
+            color: #555;
+        }
+
+        /* SERVICES */
+        .services {
+            background: #f7f9fb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-card-content {
+            padding: 24px;
+        }
+
+        .service-card h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* DESIGN SOLUTIONS */
+        .solutions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .solutions img {
+            width: 100%;
+            height: 470px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .solution-list {
+            margin-top: 20px;
+        }
+
+        .solution-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .solution-icon {
+            min-width: 42px;
+            height: 42px;
+            background: #f28c28;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .solution-item h3 {
+            color: #123b5d;
+            margin-bottom: 4px;
+        }
+
+        .solution-item p {
+            color: #666;
+        }
+
+        /* PROCESS */
+        .process {
+            background: #f7f9fb;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .process-card {
+            background: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .process-number {
+            width: 55px;
+            height: 55px;
+            background: #123b5d;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .process-card h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* CTA */
+        .cta {
+            background:
+                linear-gradient(rgba(18,59,93,0.92), rgba(18,59,93,0.92)),
+                url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            color: white;
+            text-align: center;
+            padding: 80px 7%;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 18px;
+            color: #ffb347;
+        }
+
+        footer p,
+        footer a {
+            color: #d7e0e7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            margin-top: 35px;
+            padding-top: 20px;
+            text-align: center;
+            color: #b9c6cf;
+            font-size: 13px;
+        }
+
+        /* FLOATING BUTTONS */
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1000px) {
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 15px 4%;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            .hero {
+                height: 500px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 55px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .intro,
+            .solutions {
+                grid-template-columns: 1fr;
+            }
+
+            .intro img {
+                height: 320px;
+            }
+
+            .solutions img {
+                height: 330px;
+            }
+
+            .service-grid,
+            .process-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="navbar">
+
+        <div class="logo">
+            MC <span>SERVICES</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="painting.html">Painting</a></li>
+                <li><a href="waterproofing.html">Waterproofing</a></li>
+                <li><a href="interior.html">Interior Design</a></li>
+                <li><a href="facility.html">Facility Management</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Beautiful Interiors. Thoughtfully Designed.</h1>
+
+        <p>
+            Professional interior design solutions for homes,
+            offices and commercial spaces.
+        </p>
+
+        <a href="contact.html" class="btn btn-orange">
+            Get a Free Consultation
+        </a>
+
+        <a href="tel:9591895195" class="btn btn-outline">
+            Call Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="section">
+
+    <div class="intro">
+
+        <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern Interior Design">
+
+        <div class="intro-text">
+
+            <h2>Transform Your Space</h2>
+
+            <p>
+                At <strong>MC SERVICES</strong>, we create interiors that
+                combine beauty, comfort and functionality.
+            </p>
+
+            <p>
+                Whether you are designing a new home, renovating an
+                existing apartment or creating a professional office,
+                our team helps turn your ideas into practical and
+                elegant spaces.
+            </p>
+
+            <p>
+                From space planning and colour selection to furniture,
+                lighting and finishing touches, we focus on every detail.
+            </p>
+
+            <a href="contact.html" class="btn btn-orange">
+                Discuss Your Project
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="section services">
+
+    <div class="section-title">
+
+        <h2>Our Interior Design Services</h2>
+
+        <p>
+            Complete interior solutions designed around your lifestyle,
+            requirements and budget.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=900&q=85"
+                alt="Living Room Interior Design">
+
+            <div class="service-card-content">
+
+                <h3>Living Room Design</h3>
+
+                <p>
+                    Elegant and comfortable living spaces with carefully
+                    selected colours, furniture, lighting and décor.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+                alt="Modular Kitchen">
+
+            <div class="service-card-content">
+
+                <h3>Modular Kitchen</h3>
+
+                <p>
+                    Functional and modern kitchens designed for efficient
+                    storage, cooking and everyday convenience.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+                alt="Bedroom Interior">
+
+            <div class="service-card-content">
+
+                <h3>Bedroom Interiors</h3>
+
+                <p>
+                    Peaceful and personalised bedrooms designed for
+                    comfort, relaxation and smart storage.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                alt="Office Interior">
+
+            <div class="service-card-content">
+
+                <h3>Office Interiors</h3>
+
+                <p>
+                    Professional workspaces designed to improve
+                    productivity, organisation and employee comfort.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=85"
+                alt="False Ceiling and Lighting">
+
+            <div class="service-card-content">
+
+                <h3>Ceiling & Lighting</h3>
+
+                <p>
+                    Stylish ceiling designs and lighting solutions that
+                    create the right atmosphere for every room.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=900&q=85"
+                alt="Furniture and Storage">
+
+            <div class="service-card-content">
+
+                <h3>Furniture & Storage</h3>
+
+                <p>
+                    Smart furniture and storage solutions that maximise
+                    space while maintaining a clean and modern look.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DESIGN SOLUTIONS -->
+<section class="section">
+
+    <div class="solutions">
+
+        <img
+            src="https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern Home Interior">
+
+        <div>
+
+            <div class="section-title" style="text-align:left; margin-bottom:25px;">
+
+                <h2>Designed Around You</h2>
+
+                <p>
+                    We focus on creating spaces that look beautiful
+                    while making everyday life easier.
+                </p>
+
+            </div>
+
+
+            <div class="solution-list">
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Smart Space Planning</h3>
+                        <p>
+                            We use available space efficiently and create
+                            layouts that are practical and comfortable.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Personalised Design</h3>
+                        <p>
+                            Designs are planned according to your lifestyle,
+                            preferences and functional requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Quality Materials</h3>
+                        <p>
+                            We focus on durable materials and quality
+                            finishing for long-lasting interiors.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Budget-Conscious Solutions</h3>
+                        <p>
+                            We help you choose suitable solutions while
+                            keeping your project requirements and budget in mind.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section class="section process">
+
+    <div class="section-title">
+
+        <h2>Our Interior Design Process</h2>
+
+        <p>
+            A simple and transparent approach from the first discussion
+            to the final handover.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <div class="process-number">1</div>
+
+            <h3>Consultation</h3>
+
+            <p>
+                We understand your ideas, requirements, lifestyle and budget.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">2</div>
+
+            <h3>Design Planning</h3>
+
+            <p>
+                We develop suitable layouts, colour concepts and design ideas.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">3</div>
+
+            <h3>Execution</h3>
+
+            <p>
+                Our team coordinates the work and focuses on quality execution.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">4</div>
+
+            <h3>Final Handover</h3>
+
+            <p>
+                We inspect the completed work and make sure the space is ready.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Interior Design Inspiration</h2>
+
+        <p>
+            Explore the kind of modern, elegant and functional spaces
+            we aim to create.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+            alt="Elegant Living Room">
+
+        <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"
+            alt="Modern Kitchen">
+
+        <img
+            src="https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1000&q=85"
+            alt="Bedroom Interior">
+
+        <img
+            src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=1000&q=85"
+            alt="Modern Home Interior">
+
+        <img
+            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=85"
+            alt="Luxury Interior">
+
+        <img
+            src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1000&q=85"
+            alt="Contemporary Interior">
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Ready to Transform Your Space?</h2>
+
+    <p>
+        Talk to MC SERVICES today and let's create an interior
+        that matches your vision.
+    </p>
+
+    <a href="tel:9591895195" class="btn btn-orange">
+        📞 Call 9591895195
+    </a>
+
+    <a
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20am%20interested%20in%20your%20Interior%20Design%20services."
+        class="btn btn-outline"
+        target="_blank">
+        WhatsApp Us
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Professional solutions for Painting, Waterproofing,
+                Interior Design and Facility Management.
+            </p>
+
+            <br>
+
+            <p>
+                Quality workmanship. Reliable service. Beautiful spaces.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="painting.html">Painting</a></li>
+                <li><a href="waterproofing.html">Waterproofing</a></li>
+                <li><a href="interior.html">Interior Design</a></li>
+                <li><a href="facility.html">Facility Management</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <p>📞 <a href="tel:9591895195">9591895195</a></p>
+
+            <p>
+                ✉
+                <a href="mailto:mc.services.blr@gmail.com">
+                    mc.services.blr@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📍 Bhavani Nagar,<br>
+                Bengaluru – 560032
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC SERVICES. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+
+    <a
+        class="float-btn whatsapp"
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20need%20information%20about%20Interior%20Design."
+        target="_blank"
+        title="WhatsApp">
+        💬
+    </a>
+
+    <a
+        class="float-btn call"
+        href="tel:9591895195"
+        title="Call MC Services">
+        📞
+    </a>
+
+</div>
+
+</body>
+</html>
+```

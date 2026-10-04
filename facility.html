@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facility Management Services | MC SERVICES</title>
+
+    <meta name="description"
+          content="MC SERVICES provides professional facility management, housekeeping, maintenance, security coordination and property support services in Bengaluru.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* HEADER */
+        header {
+            background: #123b5d;
+            padding: 15px 6%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffb347;
+        }
+
+        /* HERO */
+        .hero {
+            height: 600px;
+
+            background:
+                linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+                url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-orange {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: #d96f0c;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #123b5d;
+        }
+
+        /* COMMON SECTION */
+        .section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            max-width: 760px;
+            margin: auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* INTRO */
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .intro img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .intro-text h2 {
+            color: #123b5d;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        /* SERVICES */
+        .services {
+            background: #f7f9fb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-card-content {
+            padding: 24px;
+        }
+
+        .service-card h3 {
+            color: #123b5d;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* MANAGEMENT SOLUTIONS */
+        .solutions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .solutions img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .solution-list {
+            margin-top: 25px;
+        }
+
+        .solution-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 23px;
+        }
+
+        .solution-icon {
+            min-width: 43px;
+            height: 43px;
+            background: #f28c28;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .solution-item h3 {
+            color: #123b5d;
+            margin-bottom: 4px;
+        }
+
+        .solution-item p {
+            color: #666;
+        }
+
+        /* WHY CHOOSE */
+        .why {
+            background: #f7f9fb;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .why-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .why-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* PROCESS */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .process-card {
+            text-align: center;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+        }
+
+        .process-number {
+            width: 55px;
+            height: 55px;
+            background: #123b5d;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .process-card h3 {
+            color: #123b5d;
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            background: #f7f9fb;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* CTA */
+        .cta {
+            background:
+                linear-gradient(rgba(18,59,93,0.92), rgba(18,59,93,0.92)),
+                url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1800&q=85")
+                center/cover no-repeat;
+
+            color: white;
+            text-align: center;
+            padding: 80px 7%;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            color: #ffb347;
+            margin-bottom: 18px;
+        }
+
+        footer p,
+        footer a {
+            color: #d7e0e7;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.15);
+            margin-top: 35px;
+            padding-top: 20px;
+            text-align: center;
+            color: #b9c6cf;
+            font-size: 13px;
+        }
+
+        /* FLOATING BUTTONS */
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1000px) {
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid,
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 15px 4%;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 9px;
+            }
+
+            nav ul li a {
+                font-size: 11px;
+            }
+
+            .hero {
+                height: 500px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .section {
+                padding: 55px 5%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            .intro,
+            .solutions {
+                grid-template-columns: 1fr;
+            }
+
+            .intro img {
+                height: 320px;
+            }
+
+            .solutions img {
+                height: 330px;
+            }
+
+            .service-grid,
+            .why-grid,
+            .process-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="navbar">
+
+        <div class="logo">
+            MC <span>SERVICES</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="painting.html">Painting</a></li>
+                <li><a href="waterproofing.html">Waterproofing</a></li>
+                <li><a href="interior.html">Interior Design</a></li>
+                <li><a href="facility.html">Facility Management</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Professional Facility Management</h1>
+
+        <p>
+            Reliable property maintenance and facility support
+            for residential, commercial and community spaces.
+        </p>
+
+        <a href="contact.html" class="btn btn-orange">
+            Get a Free Consultation
+        </a>
+
+        <a href="tel:9591895195" class="btn btn-outline">
+            Call Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="section">
+
+    <div class="intro">
+
+        <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85"
+            alt="Professional Facility Management">
+
+        <div class="intro-text">
+
+            <h2>Your Property, Our Responsibility</h2>
+
+            <p>
+                <strong>MC SERVICES</strong> provides dependable facility
+                management solutions designed to keep your property
+                clean, safe, functional and well maintained.
+            </p>
+
+            <p>
+                From regular housekeeping and building maintenance to
+                electrical, plumbing and common-area support, we help
+                property owners and organisations manage their facilities
+                efficiently.
+            </p>
+
+            <p>
+                Our objective is simple: reduce maintenance concerns and
+                provide a comfortable and well-maintained environment.
+            </p>
+
+            <a href="contact.html" class="btn btn-orange">
+                Enquire Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="section services">
+
+    <div class="section-title">
+
+        <h2>Our Facility Management Services</h2>
+
+        <p>
+            Comprehensive support services for residential communities,
+            offices, commercial properties and other facilities.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+        <!-- Housekeeping -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85"
+                alt="Housekeeping Services">
+
+            <div class="service-card-content">
+
+                <h3>Housekeeping Services</h3>
+
+                <p>
+                    Professional cleaning and housekeeping support
+                    for homes, offices, apartments and common areas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Building Maintenance -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=85"
+                alt="Building Maintenance">
+
+            <div class="service-card-content">
+
+                <h3>Building Maintenance</h3>
+
+                <p>
+                    Regular maintenance support to keep buildings,
+                    common areas and facilities in good condition.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Electrical -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=85"
+                alt="Electrical Maintenance">
+
+            <div class="service-card-content">
+
+                <h3>Electrical Maintenance</h3>
+
+                <p>
+                    Support for electrical maintenance, lighting,
+                    fixtures and common electrical requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Plumbing -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=85"
+                alt="Plumbing Maintenance">
+
+            <div class="service-card-content">
+
+                <h3>Plumbing Services</h3>
+
+                <p>
+                    Plumbing inspection, repair and maintenance
+                    support for common facility requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Garden -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=85"
+                alt="Garden Maintenance">
+
+            <div class="service-card-content">
+
+                <h3>Garden & Landscape Maintenance</h3>
+
+                <p>
+                    Regular care of gardens, lawns, plants and
+                    landscaped areas to maintain a fresh appearance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Common Areas -->
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                alt="Commercial Facility">
+
+            <div class="service-card-content">
+
+                <h3>Common Area Management</h3>
+
+                <p>
+                    Support for lobbies, corridors, parking areas,
+                    community spaces and other shared facilities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MANAGEMENT SOLUTIONS -->
+<section class="section">
+
+    <div class="solutions">
+
+        <div>
+
+            <div class="section-title"
+                 style="text-align:left; margin-bottom:25px;">
+
+                <h2>Complete Property Support</h2>
+
+                <p>
+                    We help you maintain your property through
+                    organised, responsive and dependable services.
+                </p>
+
+            </div>
+
+
+            <div class="solution-list">
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Regular Maintenance</h3>
+
+                        <p>
+                            Scheduled maintenance helps identify
+                            issues before they become major problems.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Quick Response</h3>
+
+                        <p>
+                            We aim to respond quickly to maintenance
+                            requirements and service requests.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Trained Service Team</h3>
+
+                        <p>
+                            Our service approach focuses on professionalism,
+                            responsibility and quality workmanship.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="solution-item">
+
+                    <div class="solution-icon">✓</div>
+
+                    <div>
+                        <h3>Single Point of Support</h3>
+
+                        <p>
+                            Simplify property maintenance by coordinating
+                            multiple facility requirements through one service partner.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
+            alt="Managed Commercial Facility">
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="section why">
+
+    <div class="section-title">
+
+        <h2>Why Choose MC SERVICES?</h2>
+
+        <p>
+            We focus on reliable service, professional coordination
+            and long-term property care.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="why-icon">🏢</div>
+
+            <h3>Professional Service</h3>
+
+            <p>
+                Organised facility support with attention to
+                quality and customer requirements.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🛠️</div>
+
+            <h3>Reliable Maintenance</h3>
+
+            <p>
+                Regular maintenance support to help keep
+                your property functioning smoothly.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">⏱️</div>
+
+            <h3>Timely Response</h3>
+
+            <p>
+                Prompt attention to service requests and
+                maintenance requirements.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🤝</div>
+
+            <h3>Customer Focus</h3>
+
+            <p>
+                We work to understand your facility needs
+                and provide practical solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Our Facility Management Process</h2>
+
+        <p>
+            A structured approach to understand, manage and maintain
+            your facility requirements.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <div class="process-number">1</div>
+
+            <h3>Site Assessment</h3>
+
+            <p>
+                We understand the property, existing facilities
+                and maintenance requirements.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">2</div>
+
+            <h3>Service Planning</h3>
+
+            <p>
+                We identify the required services and prepare
+                a suitable maintenance plan.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">3</div>
+
+            <h3>Service Execution</h3>
+
+            <p>
+                Our team carries out the agreed facility
+                management and maintenance activities.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">4</div>
+
+            <h3>Monitoring</h3>
+
+            <p>
+                We monitor service requirements and address
+                maintenance concerns as needed.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="section gallery">
+
+    <div class="section-title">
+
+        <h2>Facility Management Solutions</h2>
+
+        <p>
+            Professional support for clean, functional and
+            well-maintained properties.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85"
+            alt="Professional Cleaning">
+
+        <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85"
+            alt="Office Facility">
+
+        <img
+            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85"
+            alt="Commercial Facility">
+
+        <img
+            src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1000&q=85"
+            alt="Landscape Maintenance">
+
+        <img
+            src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1000&q=85"
+            alt="Plumbing Service">
+
+        <img
+            src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"
+            alt="Electrical Maintenance">
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Let Us Take Care of Your Property</h2>
+
+    <p>
+        Contact MC SERVICES for reliable facility management
+        and property maintenance solutions.
+    </p>
+
+    <a href="tel:9591895195" class="btn btn-orange">
+        📞 Call 9591895195
+    </a>
+
+    <a
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20am%20interested%20in%20your%20Facility%20Management%20services."
+        class="btn btn-outline"
+        target="_blank">
+        WhatsApp Us
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Professional solutions for Painting, Waterproofing,
+                Interior Design and Facility Management.
+            </p>
+
+            <br>
+
+            <p>
+                Quality workmanship. Reliable service. Beautiful spaces.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="painting.html">Painting</a></li>
+
+                <li><a href="waterproofing.html">Waterproofing</a></li>
+
+                <li><a href="interior.html">Interior Design</a></li>
+
+                <li><a href="facility.html">Facility Management</a></li>
+
+                <li><a href="about.html">About Us</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <p>
+                📞
+                <a href="tel:9591895195">
+                    9591895195
+                </a>
+            </p>
+
+            <p>
+                ✉
+                <a href="mailto:mc.services.blr@gmail.com">
+                    mc.services.blr@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📍 Bhavani Nagar,<br>
+                Bengaluru – 560032
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC SERVICES. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+
+    <a
+        class="float-btn whatsapp"
+        href="https://wa.me/919591895195?text=Hello%20MC%20SERVICES,%20I%20need%20information%20about%20Facility%20Management."
+        target="_blank"
+        title="WhatsApp">
+        💬
+    </a>
+
+    <a
+        class="float-btn call"
+        href="tel:9591895195"
+        title="Call MC SERVICES">
+        📞
+    </a>
+
+</div>
+
+</body>
+</html>
+```

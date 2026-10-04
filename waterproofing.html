@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Waterproofing Services | MC Services Bengaluru</title>
+
+    <meta name="description"
+        content="MC Services provides professional waterproofing solutions for terraces, roofs, bathrooms, walls, basements and residential and commercial properties in Bengaluru.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: #222;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+            padding: 14px 6%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123b5d;
+        }
+
+        .logo span {
+            color: #f28c28;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #f28c28;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 590px;
+
+            background:
+                linear-gradient(
+                    rgba(8, 48, 72, 0.72),
+                    rgba(8, 48, 72, 0.72)
+                ),
+
+                url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 7%;
+
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #5fd3ff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 720px;
+            margin-bottom: 30px;
+            color: #edf7fb;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-orange {
+            background: #f28c28;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background: #d96f0c;
+        }
+
+        .btn-white {
+            background: white;
+            color: #123b5d;
+        }
+
+        .btn-white:hover {
+            background: #eeeeee;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+
+        /* ================= INTRO ================= */
+
+        .intro {
+            padding: 70px 7%;
+            text-align: center;
+        }
+
+        .intro h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            max-width: 900px;
+            margin: auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* ================= WATERPROOFING SERVICES ================= */
+
+        .services {
+            background: #f5f8fa;
+            padding: 70px 7%;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .heading h2 {
+            color: #123b5d;
+            font-size: 38px;
+        }
+
+        .heading p {
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 24px;
+        }
+
+        .service-content h3 {
+            color: #123b5d;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* ================= PROBLEM SECTION ================= */
+
+        .problems {
+            padding: 80px 7%;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .problem-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .problem-content h2 {
+            color: #123b5d;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .problem-content p {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .problem-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .problem-list li {
+            padding: 11px 0;
+            font-weight: 600;
+        }
+
+        .problem-list li::before {
+            content: "💧";
+            margin-right: 10px;
+        }
+
+        /* ================= BENEFITS ================= */
+
+        .benefits {
+            padding: 70px 7%;
+            background: #f5f8fa;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .benefit-icon {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ================= PROCESS ================= */
+
+        .process {
+            padding: 75px 7%;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            background: #f5f8fa;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .process-number {
+            width: 55px;
+            height: 55px;
+            margin: auto auto 15px;
+
+            background: #123b5d;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .process-card h3 {
+            color: #123b5d;
+            margin-bottom: 8px;
+        }
+
+        .process-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* ================= GALLERY ================= */
+
+        .gallery {
+            padding: 70px 7%;
+            background: #f5f8fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+
+            padding: 75px 7%;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(18,59,93,0.93),
+                    rgba(18,59,93,0.93)
+                ),
+
+                url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            font-size: 17px;
+            margin-bottom: 28px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #092b43;
+            color: white;
+            padding: 50px 7% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 35px;
+        }
+
+        footer h3 {
+            color: #ffb347;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #d9e4eb;
+        }
+
+        footer a {
+            display: block;
+            color: #d9e4eb;
+            text-decoration: none;
+            margin: 8px 0;
+        }
+
+        footer a:hover {
+            color: #ffb347;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 18px;
+            color: #b9c9d3;
+            font-size: 14px;
+        }
+
+        /* ================= FLOATING BUTTONS ================= */
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 999;
+
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .floating-btn {
+            width: 58px;
+            height: 58px;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+
+            color: white;
+            font-size: 27px;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .call {
+            background: #123b5d;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width: 1000px) {
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefit-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 8px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 550px;
+                padding: 60px 6%;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .service-grid,
+            .benefit-grid,
+            .process-grid,
+            .gallery-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2,
+            .heading h2,
+            .problem-content h2,
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        MC <span>SERVICES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="painting.html">Painting</a>
+
+        <a href="waterproofing.html">Waterproofing</a>
+
+        <a href="interior.html">Interior Design</a>
+
+        <a href="facility.html">Facility Management</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Professional
+            <span>Waterproofing Solutions</span>
+        </h1>
+
+        <p>
+            Protect your home, office and commercial property
+            from water leakage, dampness and moisture with
+            professional waterproofing solutions from MC Services.
+        </p>
+
+        <div class="buttons">
+
+            <a href="contact.html"
+               class="btn btn-orange">
+                Request a Quote
+            </a>
+
+            <a href="tel:9591895195"
+               class="btn btn-white">
+                📞 Call Now
+            </a>
+
+            <a href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20am%20interested%20in%20your%20waterproofing%20services."
+               target="_blank"
+               class="btn btn-whatsapp">
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <h2>Protect Your Property from Water Damage</h2>
+
+    <p>
+        Water leakage and moisture can gradually damage walls,
+        ceilings, roofs and other parts of a building. MC Services
+        provides professional waterproofing solutions designed
+        to help protect your property and maintain its condition.
+    </p>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+    <div class="heading">
+
+        <h2>Our Waterproofing Services</h2>
+
+        <p>
+            Solutions for common residential and commercial
+            waterproofing requirements.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <!-- TERRACE -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=85"
+                alt="Terrace Waterproofing">
+
+            <div class="service-content">
+
+                <h3>Terrace Waterproofing</h3>
+
+                <p>
+                    Protect terraces and rooftops from rainwater
+                    penetration, seepage and moisture-related damage.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROOF -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=85"
+                alt="Roof Waterproofing">
+
+            <div class="service-content">
+
+                <h3>Roof Waterproofing</h3>
+
+                <p>
+                    Waterproofing solutions for roofs to help
+                    reduce water penetration and leakage.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BATHROOM -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=85"
+                alt="Bathroom Waterproofing">
+
+            <div class="service-content">
+
+                <h3>Bathroom Waterproofing</h3>
+
+                <p>
+                    Help prevent moisture and leakage around
+                    bathroom floors, walls and wet areas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- WALL -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=85"
+                alt="Wall Dampness Treatment">
+
+            <div class="service-content">
+
+                <h3>Wall Waterproofing</h3>
+
+                <p>
+                    Solutions for damp walls, seepage and
+                    moisture-related surface problems.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BASEMENT -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=85"
+                alt="Basement Waterproofing">
+
+            <div class="service-content">
+
+                <h3>Basement Waterproofing</h3>
+
+                <p>
+                    Help protect basement and below-ground areas
+                    from unwanted moisture and water entry.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- REPAIR -->
+
+        <div class="service-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85"
+                alt="Water Leakage Repair">
+
+            <div class="service-content">
+
+                <h3>Leakage Treatment</h3>
+
+                <p>
+                    Identify and address common leakage and
+                    seepage problems in your property.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WATER DAMAGE ================= -->
+
+<section class="problems">
+
+    <div class="problem-grid">
+
+
+        <div class="problem-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=85"
+                alt="Building Waterproofing Work">
+
+        </div>
+
+
+        <div class="problem-content">
+
+            <h2>Common Water Problems We Address</h2>
+
+            <p>
+                Water-related problems can affect both the appearance
+                and long-term condition of a building.
+            </p>
+
+            <ul class="problem-list">
+
+                <li>Terrace and roof leakage</li>
+
+                <li>Bathroom and wet-area seepage</li>
+
+                <li>Damp walls and ceilings</li>
+
+                <li>Rainwater penetration</li>
+
+                <li>Moisture-related surface damage</li>
+
+                <li>Basement water entry</li>
+
+            </ul>
+
+            <a href="contact.html"
+               class="btn btn-orange">
+                Discuss Your Requirement
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BENEFITS ================= -->
+
+<section class="benefits">
+
+    <div class="heading">
+
+        <h2>Benefits of Waterproofing</h2>
+
+        <p>
+            Proper waterproofing can help protect and maintain your property.
+        </p>
+
+    </div>
+
+
+    <div class="benefit-grid">
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">💧</div>
+
+            <h3>Leakage Protection</h3>
+
+            <p>
+                Helps reduce unwanted water penetration and leakage.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🏠</div>
+
+            <h3>Property Protection</h3>
+
+            <p>
+                Helps protect building surfaces from moisture damage.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🧱</div>
+
+            <h3>Surface Preservation</h3>
+
+            <p>
+                Helps maintain walls, ceilings and other surfaces.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <div class="benefit-icon">🔧</div>
+
+            <h3>Preventive Maintenance</h3>
+
+            <p>
+                Addressing water problems early can help avoid
+                larger repair requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+    <div class="heading">
+
+        <h2>Our Waterproofing Process</h2>
+
+        <p>
+            A systematic approach to understanding and addressing
+            waterproofing requirements.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card">
+
+            <div class="process-number">1</div>
+
+            <h3>Inspection</h3>
+
+            <p>
+                We inspect the affected area and understand
+                the water-related problem.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">2</div>
+
+            <h3>Assessment</h3>
+
+            <p>
+                We identify possible sources and areas
+                requiring waterproofing treatment.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">3</div>
+
+            <h3>Treatment</h3>
+
+            <p>
+                Appropriate waterproofing work is carried out
+                based on the property requirement.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <div class="process-number">4</div>
+
+            <h3>Final Check</h3>
+
+            <p>
+                The completed work is reviewed for proper
+                finishing and coverage.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="gallery">
+
+    <div class="heading">
+
+        <h2>Waterproofing Work</h2>
+
+        <p>
+            Examples of construction and waterproofing environments.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85"
+                alt="Waterproofing Construction Work">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=85"
+                alt="Construction Maintenance">
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img
+                src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?auto=format&fit=crop&w=1000&q=85"
+                alt="Building Maintenance">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Have a Leakage or Waterproofing Problem?</h2>
+
+    <p>
+        Contact MC Services to discuss your waterproofing requirement.
+    </p>
+
+    <a href="tel:9591895195"
+       class="btn btn-white">
+        📞 9591895195
+    </a>
+
+    <a href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20have%20a%20waterproofing%20requirement."
+       target="_blank"
+       class="btn btn-whatsapp">
+        💬 Get Quote on WhatsApp
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <h3>MC SERVICES</h3>
+
+            <p>
+                Painting | Waterproofing | Interior Design |
+                Facility Management
+            </p>
+
+            <p style="margin-top:15px;">
+                Professional property solutions with quality,
+                reliability and customer satisfaction.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="painting.html">Painting</a>
+
+            <a href="waterproofing.html">Waterproofing</a>
+
+            <a href="interior.html">Interior Design</a>
+
+            <a href="facility.html">Facility Management</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact Us</h3>
+
+            <a href="tel:9591895195">
+                📞 9591895195
+            </a>
+
+            <a href="https://wa.me/919591895195"
+               target="_blank">
+                💬 WhatsApp
+            </a>
+
+            <a href="mailto:mc.services.blr@gmail.com">
+                ✉ mc.services.blr@gmail.com
+            </a>
+
+            <p style="margin-top:12px;">
+                📍 Bhavani Nagar,<br>
+                Bengaluru - 560032
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MC Services. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="floating-buttons">
+
+    <a
+        href="https://wa.me/919591895195?text=Hello%20MC%20Services,%20I%20am%20interested%20in%20your%20waterproofing%20services."
+        target="_blank"
+        class="floating-btn whatsapp"
+        title="Chat on WhatsApp">
+
+        💬
+
+    </a>
+
+
+    <a
+        href="tel:9591895195"
+        class="floating-btn call"
+        title="Call MC Services">
+
+        📞
+
+    </a>
+
+</div>
+
+
+</body>
+</html>
+```
